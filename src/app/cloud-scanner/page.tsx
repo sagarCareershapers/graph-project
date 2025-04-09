@@ -6,6 +6,8 @@ import DashboardLayout from '@/Layout/Layout'
 import React from 'react';
 import awsData from "@/utils/data/data.json"
 import DynamicReactFlow from '@/components/Charts/ReactFlow/DynamicReactFlow'
+import FlowWithProvider from '@/components/Charts/ReactFlow/DynamicReactFlow'
+import Cytoscape from '@/components/Charts/Cytoscape/Cytoscape'
 
 type Props = {}
 
@@ -242,8 +244,10 @@ const page = (props: Props) => {
     <DashboardLayout>
         {/*<TreeChart data={data} />*/}
         {/* <Chart2 /> */}
-        <ReactFlowComponent />
+        {/* <ReactFlowComponent /> */}
         {/* <DynamicReactFlow awsData={awsData} /> */}
+        {/* <FlowWithProvider/> */}
+        <Cytoscape />
     </DashboardLayout>
   )
 }
